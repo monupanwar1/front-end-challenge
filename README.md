@@ -77,7 +77,7 @@ We are introducing a **Commodities Management System** to **diversify product va
 
 ## Connect with Us:
 
-Reach out to **[careers@slooze.xyz](mailto:careers@slooze.xyz)** to submit your solutions or if you may have any questions related to the challenege
+Reach out to **[interview@slooze.xyz](mailto:interview@slooze.xyz)** to submit your solutions or if you may have any questions related to the challenege
 
 ## © Copyright Notice
 
