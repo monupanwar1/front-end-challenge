@@ -1,0 +1,128 @@
+export type Product = {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  costPrice: number;
+  stock: number;
+  category: string;
+  brand: string;
+  sku: string;
+  image: string;
+  status: 'active' | 'out_of_stock';
+  createdAt: string;
+};
+export const mockProducts: Product[] = [
+  {
+    id: 1,
+    title: 'Rice',
+    description: 'Premium basmati rice',
+    price: 500,
+    costPrice: 400,
+    stock: 50,
+    category: 'Grains',
+    brand: 'India Gate',
+    sku: 'RIC-001',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-01',
+  },
+  {
+    id: 2,
+    title: 'Wheat',
+    description: 'Organic whole wheat',
+    price: 400,
+    costPrice: 320,
+    stock: 30,
+    category: 'Grains',
+    brand: 'Aashirvaad',
+    sku: 'WHT-002',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-02',
+  },
+  {
+    id: 3,
+    title: 'Sugar',
+    description: 'Refined white sugar',
+    price: 300,
+    costPrice: 240,
+    stock: 0,
+    category: 'Essentials',
+    brand: 'Dhampur',
+    sku: 'SUG-003',
+    image: 'https://via.placeholder.com/150',
+    status: 'out_of_stock',
+    createdAt: '2025-01-03',
+  },
+  {
+    id: 4,
+    title: 'Salt',
+    description: 'Iodized salt',
+    price: 50,
+    costPrice: 30,
+    stock: 100,
+    category: 'Essentials',
+    brand: 'Tata',
+    sku: 'SLT-004',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-04',
+  },
+  {
+    id: 5,
+    title: 'Oil',
+    description: 'Refined sunflower oil',
+    price: 900,
+    costPrice: 750,
+    stock: 20,
+    category: 'Cooking',
+    brand: 'Fortune',
+    sku: 'OIL-005',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-05',
+  },
+  {
+    id: 6,
+    title: 'Milk',
+    description: 'Fresh dairy milk',
+    price: 60,
+    costPrice: 45,
+    stock: 80,
+    category: 'Dairy',
+    brand: 'Amul',
+    sku: 'MLK-006',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-06',
+  },
+  {
+    id: 7,
+    title: 'Tea',
+    description: 'Strong black tea',
+    price: 250,
+    costPrice: 200,
+    stock: 40,
+    category: 'Beverages',
+    brand: 'Tata Tea',
+    sku: 'TEA-007',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-07',
+  },
+  {
+    id: 8,
+    title: 'Coffee',
+    description: 'Instant coffee powder',
+    price: 450,
+    costPrice: 350,
+    stock: 25,
+    category: 'Beverages',
+    brand: 'Nescafe',
+    sku: 'COF-008',
+    image: 'https://via.placeholder.com/150',
+    status: 'active',
+    createdAt: '2025-01-08',
+  },
+];

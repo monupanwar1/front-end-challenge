@@ -17,8 +17,11 @@ export function LoginForm() {
   const login = useAuthStore((s) => s.login);
 
   const onSubmit = (data: LoginFormData) => {
+    
     const user = mockUsers.find(
-      (u) => u.email === data.email && u.password === data.password,
+      (u) =>
+        u.email.toLowerCase() === data.email.toLowerCase().trim() &&
+        u.password === data.password.trim(),
     );
 
     if (!user) {
@@ -38,7 +41,7 @@ export function LoginForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className='flex flex-col gap-4 max-w-sm mx-auto mt-20'
+      className='flex flex-col gap-4 max-w-md mx-auto mt-20'
     >
       <input
         {...register('email', { required: true })}
@@ -55,8 +58,7 @@ export function LoginForm() {
 
       <button className='bg-black text-white p-2 rounded-lg'>Login</button>
 
-      {/* 👇 Demo users */}
-      <p className='text-xs text-gray-500 mt-2'>
+      <p className='text-lg text-gray-500 mt-2'>
         Manager: manager@slooze.com / 123456 <br />
         Store: store@slooze.com / 123456
       </p>
