@@ -50,4 +50,3 @@ A modern **role-based commodities management system** built with **Next.js, Type
 
 ---
 
-## 🧠 Architecture
